@@ -10,11 +10,11 @@ const showWinner = (userWin, userChoice, botChoice) => {
   if (userWin) {
     userPoint++;
     userScore.innerText = userPoint;
-    message.innerHTML = `Your Choice : ${userChoice} || Bots Choice: ${botChoice} :: <b>You Won!</b>`;
+    message.innerHTML = `<b>You Won!</b> -::- Your Choice : ${userChoice} || Bots Choice: ${botChoice}`;
   } else {
     botPoint++;
     botScore.innerText = botPoint;
-    message.innerHTML = `Your Choice : ${userChoice} || Bots Choice: ${botChoice} :: <b>Bot Won!</b>`;
+    message.innerHTML = `<b>Bot Won!</b> -::- Your Choice : ${userChoice} || Bots Choice: ${botChoice}`;
   }
 };
 
